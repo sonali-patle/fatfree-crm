@@ -162,6 +162,7 @@ GEM
     devise-i18n (1.10.2)
       devise (>= 4.8.0)
     diff-lcs (1.5.0)
+    digest (3.1.0)
     dynamic_form (1.1.4)
     email_reply_parser_ffcrm (0.5.0)
     erubi (1.11.0)
@@ -236,8 +237,14 @@ GEM
     minitest (5.16.2)
     msgpack (1.5.2)
     nenv (0.3.0)
+    net-protocol (0.1.3)
+      timeout
     net-scp (3.0.0)
       net-ssh (>= 2.6.5, < 7.0.0)
+    net-smtp (0.3.1)
+      digest
+      net-protocol
+      timeout
     net-ssh (6.1.0)
     nio4r (2.5.8)
     nokogiri (1.13.8)
@@ -434,6 +441,7 @@ GEM
     thor (1.2.1)
     tilt (2.0.10)
     timecop (0.9.5)
+    timeout (0.3.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     uglifier (4.2.0)
@@ -499,6 +507,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   libv8-node
+  net-smtp
   nokogiri (>= 1.8.1)
   paper_trail (~> 12.0.0)
   paperclip
