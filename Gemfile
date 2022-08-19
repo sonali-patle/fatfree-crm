@@ -88,7 +88,7 @@ end
 
 gem 'responds_to_parent', git: 'https://github.com/CloCkWeRX/responds_to_parent.git', branch: 'patch-2' # Temporarily pointed at git until https://github.com/zendesk/responds_to_parent/pull/7 is released
 gem 'acts_as_commentable', git: 'https://github.com/fatfreecrm/acts_as_commentable.git', branch: 'rails-61' # Our fork
-# gem 'sass-rails', '~> 5.0.3' # sass-rails 6 requires GCC 4.5+
+gem 'sass-rails', '~> 5.0.3' # sass-rails 6 requires GCC 4.5+
 gem 'coffee-rails'
 gem 'uglifier'
 gem 'execjs'
@@ -98,7 +98,7 @@ gem 'nokogiri', '>= 1.8.1'
 gem 'activemodel-serializers-xml'
 gem 'bootsnap', require: false
 gem 'devise', '~>4.6'
-# gem 'devise-i18n'
+gem 'devise-i18n'
 gem "devise-encryptable"
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'activejob'
