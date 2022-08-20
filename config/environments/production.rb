@@ -41,8 +41,8 @@ if defined?(FatFreeCRM::Application)
     # config.force_ssl = true
 
     # See everything in the log (default is :info)
-    # config.logger = Logger.new(STDOUT)
-    # config.logger.level = Logger::DEBUG
+    config.logger = Logger.new(STDOUT)
+    config.logger.level = Logger::DEBUG
 
     # Use a different logger for distributed setups
 
