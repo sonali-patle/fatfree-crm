@@ -4,8 +4,9 @@ source 'https://rubygems.org'
 
 # Uncomment the database that you have configured in config/database.yml
 # ----------------------------------------------------------------------
-gem 'rails', '6.1.6.1'
+ruby '3.0.0'
 
+gem 'rails', '6.1.6.1'
 case ENV['CI'] && ENV['DB']
 when 'sqlite'
   gem 'sqlite3', '~> 1.4.0'
@@ -87,7 +88,7 @@ group :heroku do
   gem 'puma'
 end
 
-gem "libv8-node"
+# gem "libv8-node"
 gem 'net-smtp', require: false
 gem 'net-imap', require: false
 gem 'net-pop', require: false
